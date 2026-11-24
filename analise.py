@@ -1,3 +1,4 @@
 import pandas as pd
 import numpy as np
 df = pd.read_csv('data/clientes.csv')
+seg = df.groupby('regiao').size()
